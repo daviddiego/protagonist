@@ -78,7 +78,8 @@ class Story {
     const newPassage = passage.render();
 
     if (this.history.current == passage.id) {
-      $('#passage').html(newPassage);
+
+      $('#passage').html($('#passage').html() + newPassage);
     }
     this.renderMetaPassages();
 
